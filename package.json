@@ -13,7 +13,9 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava",
+		"transpile": "npx babel original.js --out-file index.js"
+
 	},
 	"files": [
 		"index.js"
@@ -117,7 +119,10 @@
 	],
 	"devDependencies": {
 		"ava": "*",
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
 		"read-chunk": "^2.0.0",
 		"xo": "*"
-	}
+	},
+	"dependencies": {}
 }
